@@ -1,4 +1,4 @@
-# Create React App example
+# InfoVIS
 
 Install it and run:
 
