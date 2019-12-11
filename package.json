@@ -12,6 +12,7 @@
     "@material-ui/core": "latest",
     "@material-ui/icons": "^4.5.1",
     "chart.js": "^2.9.3",
+    "chartjs-plugin-colorschemes": "^0.4.0",
     "clsx": "latest",
     "material-ui-icons": "^1.0.0-beta.36",
     "moment": "^2.24.0",

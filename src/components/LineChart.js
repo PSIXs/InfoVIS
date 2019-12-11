@@ -4,6 +4,8 @@ import Title from "./Title";
 import { Card } from "@material-ui/core";
 import moment from "moment";
 import DataAnalyzer from "../utils/DataAnalyzer";
+import 'chartjs-plugin-colorschemes/src/plugins/plugin.colorschemes';
+import { Aspect6 } from 'chartjs-plugin-colorschemes/src/colorschemes/colorschemes.office';
 
 const data = {
   datasets: [
@@ -21,7 +23,7 @@ export default function LineChart() {
   data.datasets = DataAnalyzer.countByMonthMC2();
   return (
     <React.Fragment>
-      <Title>Line Charts</Title>
+      <Title>Daily Averages</Title>
       <Card>
         <Line
           data={data}
@@ -38,6 +40,11 @@ export default function LineChart() {
                 },
               ],
             },
+            plugins: {
+              colorschemes: {
+                  scheme: Aspect6
+              }
+            }
           }}
         />
       </Card>
