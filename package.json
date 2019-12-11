@@ -10,10 +10,16 @@
   },
   "dependencies": {
     "@material-ui/core": "latest",
+    "@material-ui/icons": "^4.5.1",
+    "chart.js": "^2.9.3",
     "clsx": "latest",
+    "material-ui-icons": "^1.0.0-beta.36",
+    "moment": "^2.24.0",
     "react": "latest",
+    "react-chartjs-2": "^2.8.0",
     "react-dom": "latest",
-    "react-scripts": "latest"
+    "react-scripts": "latest",
+    "recharts": "^2.0.0-beta.1"
   },
   "browserslist": {
     "production": [
