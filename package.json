@@ -11,6 +11,7 @@
   "dependencies": {
     "@material-ui/core": "latest",
     "@material-ui/icons": "^4.5.1",
+    "@shopify/polaris": "^4.9.1",
     "chart.js": "^2.9.3",
     "chartjs-plugin-colorschemes": "^0.4.0",
     "clsx": "latest",
@@ -20,7 +21,8 @@
     "react-chartjs-2": "^2.8.0",
     "react-dom": "latest",
     "react-scripts": "latest",
-    "recharts": "^2.0.0-beta.1"
+    "recharts": "^2.0.0-beta.1",
+    "shopify": "^0.1.0"
   },
   "browserslist": {
     "production": [

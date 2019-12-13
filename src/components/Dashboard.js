@@ -11,11 +11,9 @@ import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import { mainListItems, secondaryListItems } from './listItems';
-import Deposits from './Deposits';
 import LineChart from './LineChart';
 
 const drawerWidth = 240;
@@ -151,16 +149,8 @@ export default function Dashboard() {
         <Container maxWidth="lg" className={classes.container}>
           <Grid container spacing={3}>
             {/* Chart */}
-            <Grid item xs={12} md={8}>
-              <Paper>
-                <LineChart />
-              </Paper>
-            </Grid>
-            {/* Recent Deposits */}
-            <Grid item xs={12} md={4}>
-              <Paper className={fixedHeightPaper}>
-                <Deposits />
-              </Paper>
+            <Grid item xs={12}>
+              <LineChart />
             </Grid>
           </Grid>
         </Container>
