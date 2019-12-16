@@ -6,6 +6,7 @@ import moment from "moment";
 import DataAnalyzer from "../utils/DataAnalyzer";
 import "chartjs-plugin-colorschemes/src/plugins/plugin.colorschemes";
 import { Aspect6, GreenYellow6 } from "chartjs-plugin-colorschemes/src/colorschemes/colorschemes.office";
+import { Paired12 } from "chartjs-plugin-colorschemes/src/colorschemes/colorschemes.brewer";
 import { makeStyles } from "@material-ui/core/styles";
 import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
@@ -113,7 +114,7 @@ export default function LineChart() {
                 },
                 plugins: {
                   colorschemes: {
-                    scheme: GreenYellow6
+                    scheme: Paired12
                   }
                 }
               }}
