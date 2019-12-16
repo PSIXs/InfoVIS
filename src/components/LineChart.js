@@ -13,6 +13,7 @@ import FormHelperText from "@material-ui/core/FormHelperText";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import keys from "../utils/DataAnalyzer/keys.json";
+import { YAxis } from "recharts";
 
 const useStyles = makeStyles(theme => ({
   formControl: {
@@ -37,6 +38,7 @@ export default function LineChart() {
   const [sensor, setSensor] = React.useState("");
   const [day, setDay] = React.useState("");
   const handleChange = event => {
+    setDay(undefined);
     setSensor(event.target.value);
   };
   dataDaily.datasets = DataAnalyzer.countByMonthMC2(sensor);
@@ -107,7 +109,7 @@ export default function LineChart() {
                         unit: "hour"
                       }
                     }
-                  ]
+                  ],
                 },
                 plugins: {
                   colorschemes: {
