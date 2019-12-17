@@ -88,6 +88,7 @@ const countByHourMC2 = (sensor, day) => {
         label: day,
         data: [],
         type: 'line',
+        fill: false,
       };
       const dataMap = sensorMap.get(day);
       for (let date of dataMap.keys()) {
